@@ -159,11 +159,14 @@ public class GameOfLife {
 		//// Write your code here.
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[0].length; j++) {
-				System.out.print(arr[i][j] + "  ");
+				if (j != arr[0].length - 1) {
+					System.out.print(arr[i][j] + "  ");
+				} else {
+					System.out.print(arr[i][j]);
+				}
 			}
 			System.out.println();
 		}
-		System.out.println();
 	}
 
 	// Displays the board. Living and dead cells are represented by black and white
