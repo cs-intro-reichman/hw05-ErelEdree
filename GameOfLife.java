@@ -80,7 +80,7 @@ public class GameOfLife {
 			if (input_row != null) {
 				for (int j = 1; j < input_row.length(); j++) {
 					if (input_row.charAt(j) == 'x') {
-						rel_row[j] = 1;
+						rel_row[j + 1] = 1;
 					}
 				}
 			}
@@ -159,8 +159,8 @@ public class GameOfLife {
 		//// Write your code here.
 		for (int i = 1; i < arr.length - 1; i++) {
 			System.out.print("  ");
-			for (int j = 0; j < arr[0].length - 2; j++) {
-				if (j != arr[0].length - 3) {
+			for (int j = 1; j < arr[0].length - 1; j++) {
+				if (j != arr[0].length - 1) {
 					System.out.print(arr[i][j] + "  ");
 				} else {
 					System.out.print(arr[i][j]);
