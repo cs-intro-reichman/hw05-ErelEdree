@@ -158,10 +158,9 @@ public class GameOfLife {
 	public static void print(int[][] arr) {
 		//// Write your code here.
 		for (int i = 1; i < arr.length - 1; i++) {
+			System.out.print("  ");
+
 			for (int j = 1; j < arr[0].length - 1; j++) {
-				if (i != 1 && j == 1) {
-					System.out.print("  ");
-				}
 				if (j != arr[0].length - 2) {
 					System.out.print(arr[i][j] + "  ");
 				} else {
