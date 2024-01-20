@@ -161,7 +161,7 @@ public class GameOfLife {
 			System.out.print("  ");
 			for (int j = 1; j < arr[0].length - 1; j++) {
 				if (j != arr[0].length - 1) {
-					System.out.print(arr[i][j] + "  ");
+					System.out.print(arr[i][j]);
 				} else {
 					System.out.print(arr[i][j]);
 				}
